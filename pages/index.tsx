@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               <Image alt='no image available' src='/images/noimage.jpg' width={200} height={200} />
-              <h2>Damian Toy</h2>
+              <h2>Sample Product</h2>
               <p className={styles.price}>$50.00</p>
               <p className={styles.desc}>Description of product goes here</p>
               <button className={styles.buyBtn} onClick={() => {
@@ -75,7 +75,7 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               <Image alt='no image available' src='/images/noimage.jpg' width={200} height={200} />
-              <h2>Damian Toy</h2>
+              <h2>Sample Product</h2>
               <p className={styles.price}>$99.00</p>
               <p className={styles.desc}>Description of product goes here</p>
               <button className={styles.buyBtn} onClick={() => {
@@ -93,8 +93,8 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               <Image alt='no image available' src='/images/noimage.jpg' width={200} height={200} />
-              <h2>Damian Toy</h2>
-              <p className={styles.price}>$99.00</p>
+              <h2>Sample Product</h2>
+              <p className={styles.price}>$32.00</p>
               <p className={styles.desc}>Description of product goes here</p>
               <button className={styles.buyBtn} onClick={() => {
                 checkout({
@@ -111,8 +111,8 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               <Image alt='no image available' src='/images/noimage.jpg' width={200} height={200} />
-              <h2>Damian Toy</h2>
-              <p className={styles.price}>$99.00</p>
+              <h2>Sample Product</h2>
+              <p className={styles.price}>$6.25</p>
               <p className={styles.desc}>Description of product goes here</p>
               <button className={styles.buyBtn} onClick={() => {
                 checkout({
