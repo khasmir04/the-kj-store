@@ -18,7 +18,7 @@ export default function Home() {
         <div className={styles.container}>
           <a href="">
             <div className={styles.card}>
-              <Image alt='anya-image' src='/images/anya.jpg' width={200} height={100} />
+              <Image alt='anya-image' src='/images/anya.jpg' width={200} height={200} />
               <h2>Anya</h2>
               <span>What is this</span>
               <p>Description of the product here</p>
@@ -26,7 +26,7 @@ export default function Home() {
           </a>
           <a href="">
             <div className={styles.card}>
-              <Image alt='damian-image' src='/images/damian.jpg' width={200} height={100} />
+              <Image alt='damian-image' src='/images/damian.jpg' width={200} height={200} />
               <h2>Damian</h2>
               <span>What is this</span>
               <p>Description of the product here</p>
