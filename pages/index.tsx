@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
+import { checkout } from './../checkout'
 
 export default function Home() {
   return (
@@ -16,36 +17,56 @@ export default function Home() {
           The KJ Store
         </div>
         <div className={styles.container}>
-          <a href="">
-            <div className={styles.card}>
-              <Image alt='anya-image' src='/images/anya.jpg' width={200} height={200} />
-              <h2>Anya</h2>
-              <span>What is this</span>
-              <p>Description of the product here</p>
-            </div>
-          </a>
-          <a href="">
-            <div className={styles.card}>
-              <Image alt='damian-image' src='/images/damian.jpg' width={200} height={200} />
-              <h2>Damian</h2>
-              <span>What is this</span>
-              <p>Description of the product here</p>
-            </div>
-          </a>
-          <a href="">
-            <div className={styles.card}>
-              <h2>Title here</h2>
-              <span>What is this</span>
-              <p>Description of the product here</p>
-            </div>
-          </a>
-          <a href="">
-            <div className={styles.card}>
-              <h2>Title here</h2>
-              <span>What is this</span>
-              <p>Description of the product here</p>
-            </div>
-          </a>
+
+          <div className={styles.card}>
+            <Image alt='anya-image' src='/images/anya.jpg' width={200} height={200} />
+            <h2>Anya</h2>
+            <span>What is this</span>
+            <p>Description of the product here</p>
+            <button className={styles.buyBtn} onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: 'price_1MoNx1F8wn5EaWfoDmEKGCRE',
+                    quantity: 1,
+                  }
+                ]
+              })
+            }}>Buy</button>
+          </div>
+
+
+          <div className={styles.card}>
+            <Image alt='damian-image' src='/images/damian.jpg' width={200} height={200} />
+            <h2>Damian</h2>
+            <span>What is this</span>
+            <p>Description of the product here</p>
+            <button className={styles.buyBtn} onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: 'price_1MoNxzF8wn5EaWfoLVAxyLHT',
+                    quantity: 1,
+                  }
+                ]
+              })
+            }}>Buy</button>
+          </div>
+
+
+          <div className={styles.card}>
+            <h2>Title here</h2>
+            <span>What is this</span>
+            <p>Description of the product here</p>
+          </div>
+
+
+          <div className={styles.card}>
+            <h2>Title here</h2>
+            <span>What is this</span>
+            <p>Description of the product here</p>
+          </div>
+
         </div>
       </main>
     </>
